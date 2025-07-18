@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nafi Abqory</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="Assets/js/script.js"></script>
+
+
+</head>
+
+<body>
+    <header class="sticky top-0 z-50 flex justify-between items-center px-8 py-4 bg-[#7c3aed] shadow-md">
+        <a href="#" class="flex items-center space-x-2">
+            <img src="Assets/img/logo.jpg" alt="Logo"
+                class="h-12 w-12 object-cover rounded-full border-2 border-white shadow">
+            <span class="text-xl font-bold text-white">Nafi Abqory</span>
+        </a>
+        <nav class="flex space-x-8">
+            <a href="#title" class="text-white hover:text-[#c4b5fd] font-medium transition-colors">Home</a>
+            <a href="#projects" class="text-white hover:text-[#c4b5fd] font-medium transition-colors">Projects</a>
+            <a href="#message-us" class="text-white hover:text-[#c4b5fd] font-medium transition-colors">Message</a>
+            <a href="#contact" class="text-white hover:text-[#c4b5fd] font-medium transition-colors">Contact</a>
+        </nav>
+    </header>
+
+    <section id="title" class="py-60 bg-gray-100">
+        <header class="container mx-auto items-center">
+            <h1 id="userGreeting" class="text-4xl font-bold text-center mb-6">
+                Hello <span id="welcome-user">User</span>!<br>Im Nafi Kusuma Abqory
+            </h1>
+            <p class=" text-center text-gray-600">
+                Welcome to my portfolio! Here you can find information about my projects, skills, and experiences.
+            </p>
+            <div class="flex justify-center">
+                <button id="project1" href="#projects"
+                    class="mt-4 px-8 py-3 bg-purple-600 text-white rounded-lg shadow hover:bg-purple-700 transition-colors font-semibold">
+                    PROJECTS
+                </button>
+            </div>
+        </header>
+    </section>
+
+    <hr>
+
+    <article id="projects" class="bg-white">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-15 p-30">
+                <!-- Project Box 1 -->
+                <div class="bg-white border rounded-lg shadow-lg overflow-hidden flex flex-col items-center mx-15">
+                    <img src="Assets/img/ARSTORE.png" alt="Project 1" class="w-50 h-50 mt-10 mb-2 object-cover">
+                    <div class="pb-5 pt-2 w-flex text-center">
+                        <h2 class="text-lg font-bold mb-1">ARSTORE</h2>
+                        <p class="text-gray-600">Top Up Website created using HTML & CSS</p>
+                        <a href="https://nafi1809.github.io/ARSTORE/index.html/index.html"
+                            class="text-purple-600 hover:text-purple-700 font-medium transition-colors">Website</a>
+                    </div>
+                </div>
+                <!-- Project Box 2 -->
+                <div class="bg-white border rounded-lg shadow-lg overflow-hidden flex flex-col items-center mx-15">
+                    <img src="Assets/img/ARSTORE.png" alt="Project 1" class="w-50 h-50 mt-10 mb-2 object-cover">
+                    <div class="pb-5 pt-2 w-flex text-center">
+                        <h2 class="text-lg font-bold mb-1">ARSTORE</h2>
+                        <p class="text-gray-600">Top Up Website created using HTML & CSS</p>
+                        <a href="https://nafi1809.github.io/ARSTORE/index.html/index.html"
+                            class="text-purple-600 hover:text-purple-700 font-medium transition-colors">Website</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Message Us Content -->
+        <section id="message-us"
+            class="max-w-xl mx-auto my-16 p-8 bg-white rounded-2xl shadow-lg border border-[#c4b5fd]">
+            <div class="flex flex-col items-center mb-6">
+                <h2 class="text-2xl font-bold text-[#7c3aed]">Message Mee!</h2>
+                <p class="text-gray-500 text-center">Give me a feedback 😊</p>
+            </div>
+            <form id="contactForm" class="space-y-4">
+                <div>
+                    <label for="name-input" class="block mb-1 font-medium text-[#7c3aed]">Name</label>
+                    <input type="text" id="name-input" name="name"
+                        class="border rounded p-2 w-full focus:ring-2 focus:ring-[#c4b5fd]" required>
+                    <span id="error-name" class="text-red-500 text-xs hidden">Name is required.</span>
+                </div>
+                <div>
+                    <label for="born-input" class="block mb-1 font-medium text-[#7c3aed]">Born Date</label>
+                    <input type="date" id="born-input" name="born"
+                        class="border rounded p-2 w-full focus:ring-2 focus:ring-[#c4b5fd]" required>
+                    <span id="error-born" class="text-red-500 text-xs hidden">Born date is required.</span>
+                </div>
+                <div>
+                    <span class="block mb-1 font-medium text-[#7c3aed]">Gender</span>
+                    <label class="mr-4">
+                        <input type="radio" name="gender" value="Male" required> Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="Female" required> Female
+                    </label>
+                    <span id="error-gender" class="text-red-500 text-xs block hidden">Gender is required.</span>
+                </div>
+                <div>
+                    <label for="message-input" class="block mb-1 font-medium text-[#7c3aed]">Message for me</label>
+                    <textarea id="message-input" name="message" rows="3"
+                        class="border rounded p-2 w-full focus:ring-2 focus:ring-[#c4b5fd]" required></textarea>
+                    <span id="error-message" class="text-red-500 text-xs hidden">Message is required.</span>
+                </div>
+                <button type="submit"
+                    class="w-full bg-[#7c3aed] text-white py-2 px-4 rounded hover:bg-[#6d28d9] transition duration-300 font-semibold">
+                    Submit
+                </button>
+            </form>
+            <div id="message-output"
+                class="mt-8 hidden bg-[#f3f0ff] border border-[#c4b5fd] rounded-lg shadow p-4 text-[#6d28d9]">
+                <!-- Result will appear here -->
+            </div>
+        </section>
+        </main>
+
+        <!-- Footer Content -->
+        <footer class="bg-purple-700 text-white mt-12">
+            <div class="container mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between">
+                <div class="flex items-center space-x-3 mb-4 md:mb-0">
+                    <span class="font-bold text-xl tracking-wide">Nafi Abqory</span>
+                </div>
+                <nav class="flex space-x-6 mb-4 md:mb-0">
+                    <a href="#title" class="hover:text-purple-200 transition">Home</a>
+                    <a href="#projects" class="hover:text-purple-200 transition">Projects</a>
+                    <a href="#message-us" class="hover:text-purple-200 transition">Message</a>
+                    <a href="#contact" class="hover:text-purple-200 transition">Contact</a>
+                </nav>
+                <div class="text-sm text-purple-200" id="contact">
+                    nafiabqory@gmail.com | nafiabqory
+                </div>
+            </div>
+            <div class="bg-purple-800 text-purple-200 text-xs text-center py-2">
+                Focused learning, continuous improvement, and a passion for technology.
+            </div>
+        </footer>
+    </article>
+</body>
+
+</html>
